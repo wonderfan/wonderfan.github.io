@@ -1,6 +1,6 @@
 ### 我的博客
 
-地址：[http://wonderfan.github.io](http://wonderfan.github.io)
+地址：[http://www.wonderfan.net](http://www.wonderfan.net)
 
 
 
