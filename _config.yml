@@ -1,0 +1,49 @@
+permalink: /:year/:month/:day/:title.html
+paginate: 10
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+# 作者信息
+author: 
+  name: wonderfan
+  email: phpjavaphp@gmail.com
+  link: http://wonderfan.github.io
+  weibo: http://weibo.com/wonderfan
+  github: http://github.com/wonderfan
+
+# 站点信息
+title: wonderfan的博客 
+description: wonderfan的博客
+url: http://wonderfan.github.io
+rss_url: /pages/atom.xml
+
+# gavatar头像及Favicon
+gavatar: http://yansu-uploads.stor.sinaapp.com/imgs/gavatar.png
+favicon: http://yansu-uploads.stor.sinaapp.com/imgs/favicon.ico
+
+# google analytics 设置
+ga:
+  id: UA-xxxxxx
+  url: http://wonderfan.github.io
+
+# disqus 设置
+disqus:
+  shortname: wonderfan
+
+# 主题设置，自动激活某个标签
+active: 技术
+
+# 首页除了最新文章外显示分类
+cates: 
+  - Python
+  - OpenStack
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
+  content: 目录
