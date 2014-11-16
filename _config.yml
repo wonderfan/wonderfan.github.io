@@ -20,8 +20,8 @@ url: http://www.wonderfan.net
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: http://wonderfan.gitgub.io/logo.png
-favicon: http://wonderfan.github.io/favicon.ico
+gavatar: http://www.wonderfan.net/logo.png
+favicon: http://www.wonderfan.net/favicon.ico
 
 # google analytics 设置
 ga:
