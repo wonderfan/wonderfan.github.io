@@ -25,7 +25,7 @@ favicon: http://www.wonderfan.net/favicon.ico
 
 # google analytics 设置
 ga:
-  id: UA-xxxxxx
+  id: UA-56789989-1
   url: http://www.wonderfan.net
 
 # disqus 设置
