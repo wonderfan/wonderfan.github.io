@@ -3,9 +3,8 @@ layout: post
 title: Celery的世界
 category: 技术
 tags: Python
-keywords: celery用法宝典
+keywords: celery,python,scrapy
 description: 使用celery做任务队列
-author: wonderfan
 ---
 
 ### Celery任务队列
