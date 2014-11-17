@@ -20,7 +20,7 @@ author: wonderfan
 
 Application是Celery的实例，它是线程安全的，从而不同配置的多个Celery Application是可以共存在一个进程中。
 
-创建Celery实例代码如下:
+创建Celery实例代码如下
 
    from celery  import Celery
    app = Celery()
