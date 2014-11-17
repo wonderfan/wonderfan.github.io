@@ -2,7 +2,7 @@
 
 地址：[http://www.wonderfan.net](http://www.wonderfan.net)
 
-[Markdown 手册](http://markdown-guide.readthedocs.org/en/latest/index.html)
+手册: [http://markdown-guide.readthedocs.org/en/latest/basics.html](http://markdown-guide.readthedocs.org/en/latest/basics.html)
 
 
 
