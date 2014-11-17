@@ -22,5 +22,5 @@ Application是Celery的实例，它是线程安全的，从而不同配置的多
 
 创建Celery实例代码如下
 
-   from celery  import Celery
-   app = Celery()
+    from celery  import Celery
+    app = Celery()
