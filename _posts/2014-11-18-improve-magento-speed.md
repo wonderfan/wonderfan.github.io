@@ -1,7 +1,8 @@
 ---
 layout: post
-category: Magento
-Tag: Magento
+title: Magento性能调优
+category: 技术
+Tags: Magento
 keywords: magento,speed,优化
 description: magento性能调优
 ---
@@ -34,5 +35,15 @@ description: magento性能调优
 ### 使用缓存
 
     File System => APC => Memcached => Redis cache => Varnish cache
+    
+### MySQL优化
+
+    query_cache_type = 1
+    query_cache_size = 32M
+    query_cache_limit=2M
+
+### 使用Magento性能模块
+
+    http://www.magentocommerce.com/magento-connect/pagecache-powered-by-varnish.html
     
     
