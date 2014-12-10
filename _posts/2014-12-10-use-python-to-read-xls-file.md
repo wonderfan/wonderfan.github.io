@@ -21,8 +21,8 @@ description: 使用python语言读取excel文件
     
 ### 打开excel文件中的work sheet
 
-   sheet_one = excel_sheet.sheet_by_name('one')
-   print excel_sheet.sheet_names()
+    sheet_one = excel_sheet.sheet_by_name('one')
+    print excel_sheet.sheet_names()
    
 ### 读取每行和每列中的值
 
