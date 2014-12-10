@@ -27,9 +27,10 @@ description: 使用python语言读取excel文件
 ### 读取每行和每列中的值
 
     curr_row_index = 0
-
+    max_rows = sheet_one.nrows
+    max_cols = sheet_one.ncols
     while curr_row_index < max_rows:
         curr_col_index = 0
         while curr_col_index < max_cols:
-            value = sheet1.row(curr_row_index,curr_col_index)
+            value = sheet_one.row(curr_row_index,curr_col_index)
         curr_row_index+=1
