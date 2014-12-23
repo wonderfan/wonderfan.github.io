@@ -24,5 +24,5 @@ description: 使用Pecan创建restful API 服务
     
 ### 添加业务代码
 
-× 在RestController的子类中添加get,post,put,delete等方法，并填充其业务意义
-× 在model模块中添加业务模型和数据模型，以备控制器使用
+* 在RestController的子类中添加get,post,put,delete等方法，并填充其业务意义
+* 在model模块中添加业务模型和数据模型，以备控制器使用
