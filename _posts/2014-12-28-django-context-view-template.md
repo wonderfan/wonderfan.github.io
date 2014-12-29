@@ -31,5 +31,8 @@ description: 正确使用django中的view，context和template
 ### 模板取值
 
     <p>This is my test</p>
-
-    The value is `{{ my_name }}`
+    The value is {{ my_name }}
+    
+```
+code a ;ssssss
+```
