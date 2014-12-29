@@ -34,5 +34,6 @@ description: 正确使用django中的view，context和template
     The value is {{ my_name }}
     
 ```
-code a ;ssssss
+<p>This is my test</p>
+<p>The value is {{ my_name }} </p>
 ```
