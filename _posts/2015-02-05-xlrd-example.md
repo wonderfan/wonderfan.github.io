@@ -9,7 +9,7 @@ description: 如何使用xlrd
 
 ### 简单例子阐释xlrd用法
 
-'''
+```
 import xlrd
 import os
 
@@ -90,5 +90,4 @@ if __name__ == '__main__':
 	else:
 		print('The file type %s is not supported' % file_type)
 	
-
-'''
+```
