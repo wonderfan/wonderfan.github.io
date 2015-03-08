@@ -18,13 +18,16 @@ In the Python language, it also offers similar offering:pyScss.If you use Django
 ### Take action
 
 1. Install the modules:
+
 ```
 pip install pyScss
 pip install django-pyscss
 pip install django-compressor
 pip install django
 ```
+
 2. Code Snippet
+
 ```
 {% load compress %}
 
@@ -38,5 +41,6 @@ pip install django
 ```
 
 ### Tricks and Tips
+
 If you use them in the window environment, you have to replace the path separator `/` with `\`. There are two options: either py files or scss files 
 
