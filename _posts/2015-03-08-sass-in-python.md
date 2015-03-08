@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to use SASS and Compass in Python?
+title: use SASS and Compass in Python
 category: 技术
 tags: Python
 keywords: css3,sass,compass,compressor,pyscss,django
