@@ -38,5 +38,5 @@ pip install django
 ```
 
 ### Tricks and Tips
-If you use them in the window environment, you have to replace the path separator `/` with \". There are two options: either py files or scss files 
+If you use them in the window environment, you have to replace the path separator `/` with `\`. There are two options: either py files or scss files 
 
