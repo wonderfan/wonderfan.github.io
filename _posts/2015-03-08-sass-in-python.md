@@ -17,7 +17,7 @@ In the Python language, it also offers similar offering:pyScss.If you use Django
 
 ### Take action
 
-1. Install the modules:
+1. Install the modules
 
 ```
 pip install pyScss
