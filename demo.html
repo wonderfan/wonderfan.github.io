@@ -1,1 +1,160 @@
-<p>show my demo</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy Women's Day</title>
+    <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+  </head>
+  <body>
+    <svg version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="300px" height="200px" viewBox="0 0 300 200" enable-background="new 0 0 300 200" xml:space="preserve">
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M149.95,43.749C111.115-25.583,0.729-9.406,0.002,71.063
+    c-0.402,44.195,52.563,60.716,87.829,78.384c34.196,17.135,58.534,40.574,62.347,50.553c3.266-9.777,30.373-33.88,62.028-51.032
+    c34.612-18.755,88.231-34.189,87.829-78.385C299.304-10.087,186.998-22.818,149.95,43.749z"/>
+    </svg>
+    
+    <script>
+      
+      window.onload = function () {
+
+    var card = Snap(600, 400);
+
+    // Utilities
+
+    var dropShadow = card.paper.filter(Snap.filter.shadow(0, 2, 3))
+
+    var bgGradient = card.paper.gradient("r(0.5, 0.5, 0.5)#EE2C34-#821D2D");
+    var barGradient = card.paper.gradient("l(0, 0.5, 1, 0.5)#00ADEF-#EC008B:75");
+
+    // Card's Background
+
+    var background = card.paper.rect(0, 0, 600, 400).attr({fill: bgGradient, stroke: "none"})
+
+    var rays = card.circle(300, 200, 300).attr({
+      fill: "none",
+      stroke: "red",
+      strokeWidth: 580,
+      strokeDasharray: "20 20",
+      opacity: 0.2
+    });
+
+    // Hearts Shapes
+
+    Snap.select("#heart").appendTo(card);
+
+    var heartLeft = Snap.select("path").attr({
+        fill: "#00ADEF",  
+        filter: dropShadow, 
+        transform: "t50,80",
+        opacity: 0.9
+    }).insertAfter(rays);
+
+    var heartRight = heartLeft.clone().attr({
+        fill: "#EC008B", 
+        filter: dropShadow,
+        transform: "t250,80", 
+        opacity: 0.9
+    });
+
+    // Hearts Texts
+
+    var iuText = card.paper.text(185,200, ['I','U']).attr({
+        fill: "#B5DD25", 
+        fontFamily: "Oleo Script", 
+        fontSize: "72px", 
+        filter: dropShadow,
+        opacity: 0
+    }).animate({opacity: 1}, 2000);
+
+        iuText.select("tspan:nth-child(2)").attr({dx: "160px"});
+
+    var loveText = card.paper.text(290,85, ["L", "O", "V", "E"]).attr({
+        fill: "#B5DD25", 
+        fontFamily: "Oleo Script", 
+        fontSize: "24px", 
+        filter: dropShadow,
+        opacity: 0
+    }).animate({opacity: 1}, 2000);
+
+        loveText.selectAll("tspan").attr({x: 290, dy: "1.2em"});
+
+    // Ribbon Bar
+
+    var ribbon = card.paper.rect(0, 300, 600, 70).attr({fill: "#6F2570", filter: dropShadow});
+
+    var bar = card.paper.rect(0, 300, 600, 10).attr({fill: barGradient});
+
+    // Rotating Wish Text
+
+    setTimeout(function(){
+
+      var wishText = "Happy Valentine's Day \u2763";
+
+      var charsGroup = card.g();
+
+      var charsArray = wishText.split('');
+      var wishTextChars = charsGroup.text(110, 355, charsArray).attr({ 
+          fill: "#D6DF23",
+          fontFamily: "Niconne", 
+          fontSize: "42px",
+          filter: dropShadow,
+          opacity : 1, 
+      });
+        
+      var singleChars = charsGroup.selectAll("tspan").attr({opacity: 0});
+
+      function charsAnimation( element ) {
+        Snap.animate(0,1, function( value ) {
+          element.attr({ opacity: value, rotate: (value * 360) });
+        }, 2000 );
+      }
+
+      for( var i=0; i < singleChars.length; i++ ) {
+        setTimeout( 
+          charsAnimation.bind(null, singleChars[i]) , i * 300);
+      }
+
+    }, 2000);
+
+    // Hearts Rain Effect
+
+    setTimeout(function(){
+
+      function randomNums(min, max) {
+        
+        return Math.floor( Math.random() * ( 1 + max - min ) ) + min;
+        
+      }
+          
+      setInterval(function () {
+
+        for (var i = 1; i < 29; i++) {
+
+          var hearts = ["\u2764", "\u2665"];
+          var colors = ["#D691BF","#D74498", "#A54A9C"];
+
+          var heart = randomNums(0,1);
+          var color = randomNums(0, 2);
+          var size = randomNums(3, 6);
+          var time = randomNums(5, 10);
+
+          var mutableX = i * 20;
+
+          var heartsRain = card.paper.text(mutableX, -50, hearts[heart]).attr({
+              fill: colors[color],
+              fontSize: size * 5, 
+              opacity: 0.3
+          }).animate({transform: "t0,500", opacity: 0.9}, time * 1500, mina.linear);
+
+        };
+
+      }, 2000);
+
+    }, 7000);
+
+};
+    </script>
+
+  </body>
+</html>
