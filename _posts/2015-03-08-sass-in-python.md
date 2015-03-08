@@ -19,6 +19,7 @@ In the Python language, it also offers similar offering:pyScss.If you use Django
 
 1. Install the modules
 
+
 ```
 pip install pyScss
 pip install django-pyscss
@@ -26,7 +27,7 @@ pip install django-compressor
 pip install django
 ```
 
-2. Code Snippet
+2. Code Snippets
 
 ```
 {% load compress %}
