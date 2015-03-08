@@ -91,3 +91,5 @@ if __name__ == '__main__':
 		print('The file type %s is not supported' % file_type)
 	
 ```
+
+### Wrap Up
