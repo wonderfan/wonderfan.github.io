@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Celery的世界
-category: 技术
+category: 中文
 tags: Python
 keywords: celery,python,scrapy
 description: 使用celery做任务队列
