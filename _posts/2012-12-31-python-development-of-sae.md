@@ -1,7 +1,7 @@
 ---
 layout: post
 title: sae下的python开发部署和一个简单例子
-category: 技术
+category: 中文
 tags: Python
 description: sae下的python开发部署和一个简单例子
 ---
