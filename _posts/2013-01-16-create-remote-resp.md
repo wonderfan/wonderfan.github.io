@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git创建远程库
-category: 工具
+category: 中文
 tags: Git
 description: git创建远程库
 ---
