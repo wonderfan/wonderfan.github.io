@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 用Xdebug和Sublime调试PHP代码
-category: 工具
+category: 中文
 tags: PHP
 keywords: Xdebug,Sublime,PHP
 description: 
