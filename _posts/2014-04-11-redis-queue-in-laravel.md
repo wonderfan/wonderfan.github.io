@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Laravel中使用Redis作为队列系统的工作流程
-category: 技术
+category: 中文
 tags: Laravel
 keywords: Laravel,Redis,Queue
 description: 
