@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shell 常用资源
-category: 资源
+category: 中文
 tags: Shell
 keywords: Shell
 description: 
