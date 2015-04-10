@@ -5,34 +5,29 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-# 作者信息
 author: 
-  name: wonderfan
+  name:  wonderfan
   email: phpjavaphp@gmail.com
-  link: http://www.wonderfan.net
+  link:  http://www.wonderfan.net
   weibo: http://weibo.com/phpjavaphp
   github: http://github.com/wonderfan
 
-# 站点信息
 title: wonderfan的博客 
 description: wonderfan的博客
 url: http://www.wonderfan.net
 rss_url: /pages/atom.xml
 
-# gavatar头像及Favicon
 gavatar: http://www.wonderfan.net/logo.png
 favicon: http://www.wonderfan.net/favicon.ico
 
-# google analytics 设置
 ga:
   id: UA-56789989-1
   url: http://www.wonderfan.net
 
-# disqus 设置
 disqus:
   shortname: wonderfan2000
 
-# 主题设置，自动激活某个标签
+
 active: 技术
 
 # 首页除了最新文章外显示分类
