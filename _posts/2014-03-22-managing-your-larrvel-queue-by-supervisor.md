@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用Supervisor来管理你的Laravel队列
-category: 技术
+category: 中文
 tags: [Laravel, PHP]
 keywords: Laravel,PHP,Supervisor,Queue
 description: 
