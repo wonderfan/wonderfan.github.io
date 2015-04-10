@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML 常用资源
-category: 资源
+category: 中文
 tags: HTML
 keywords: HTML
 description: 
