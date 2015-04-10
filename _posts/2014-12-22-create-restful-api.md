@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用Pecan创建restful API 服务
-category: 技术
+category: 中文
 tags: Python
 keywords: python,API,pecan,restful,服务,wonderfan
 description: 使用Pecan创建restful API 服务
