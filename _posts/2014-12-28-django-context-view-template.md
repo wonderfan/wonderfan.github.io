@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 上下文中给模板中的变量赋值
-category: 技术
+category: 中文
 tags: Python
 keywords: python,API,django,view,template,wonderfan
 description: 正确使用django中的view，context和template
