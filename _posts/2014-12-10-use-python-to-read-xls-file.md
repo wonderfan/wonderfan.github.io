@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用python语言操作excel文件
-category: 技术
+category: 中文
 tags: Python
 keywords: python,openpyxl,xlrd
 description: 使用python语言读取excel文件
