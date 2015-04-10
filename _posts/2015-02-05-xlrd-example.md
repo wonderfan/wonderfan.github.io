@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 代码实战xlrd
-category: 技术
+category: 中文
 tags: Python
 keywords: 阿樊提,xlrd,python,,wonderfan
 description: 如何使用xlrd
