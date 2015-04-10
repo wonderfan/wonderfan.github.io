@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Magento性能调优
-category: 技术
+category: 中文
 tags: Magento
 keywords: magento,speed,优化
 description: magento性能调优
