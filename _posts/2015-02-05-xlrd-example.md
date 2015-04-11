@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 代码实战xlrd
+title: 实战XLRD类库
 category: 中文
 tags: Python
 keywords: 阿樊提,xlrd,python,,wonderfan
