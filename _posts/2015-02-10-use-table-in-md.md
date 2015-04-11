@@ -10,3 +10,12 @@ description: use table in the markdown file
 ### Markdown cheatsheet
 
 There is one basic guide here <https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet>
+
+### Table
+
+You can create tables by assembling a list of words and dividing them with hyphens ` - ` (for the first row), and then separating each column with a pipe ` | `:
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
