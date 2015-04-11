@@ -1,7 +1,7 @@
 ---
 layout: book
 title: OpenStack
-category: 英文
+category: 读书
 keywords: 阅读,书单,openstack书籍,swift
 books: 
     - title: OpenStack Swift
