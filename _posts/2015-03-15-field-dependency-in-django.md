@@ -40,3 +40,47 @@ class MyForm2(forms.Form):
         for i in range(extra):
             self.fields['site_name_%s' % i] = forms.CharField()        
 ```
+
+### The model relationship way
+
+The dependency replation are setup in the model definiton and the form are generated from the model.
+
+```python
+class Address(models.Model):
+
+    contact = models.ForeignKey(Contact)
+    address_type = models.CharField(
+        max_length=10,
+    )
+
+    address = models.CharField(
+        max_length=255,
+    )
+    city = models.CharField(
+        max_length=255,
+    )
+    state = models.CharField(
+        max_length=2,
+    )
+    postal_code = models.CharField(
+        max_length=20,
+    )
+
+    class Meta:
+        unique_together = ('contact', 'address_type',)
+        
+from django.forms.models import inlineformset_factory
+
+from contacts.models import (
+    Contact,
+    Address,
+)
+
+# inlineformset_factory creates a Class from a parent model (Contact)
+# to a child model (Address)
+ContactAddressFormSet = inlineformset_factory(
+    Contact,
+    Address,
+)        
+
+```
