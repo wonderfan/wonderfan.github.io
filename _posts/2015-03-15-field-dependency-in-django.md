@@ -7,7 +7,7 @@ keywords: django,field, form,dependency,wonderfan,阿樊提
 description: use wizard form or model relation to solve the form field dependency
 ---
 
-### Two possible solutuons
+### Two possible solutions
 
 - Use wizard form
 - Use model relation
