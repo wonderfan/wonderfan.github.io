@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: english
 category: 英文
 title: How to solve the field dependency in Django Form?
 tags: Django
-keywords:django,field, form,dependency,wonderfan,阿樊提
-description:use wizard form or model relation to solve the form field dependency
+keywords: django,field, form,dependency,wonderfan,阿樊提
+description: use wizard form or model relation to solve the form field dependency
 ---
 
 ### Two possible solutuons:
