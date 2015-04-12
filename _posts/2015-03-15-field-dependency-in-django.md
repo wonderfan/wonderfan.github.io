@@ -1,0 +1,42 @@
+---
+layout: post
+category: 英文
+title: How to solve the field dependency in Django Form?
+tags: Django
+keywords:django,field, form,dependency,wonderfan,阿樊提
+description:use wizard form or model relation to solve the form field dependency
+---
+
+### Two possible solutuons:
+
+- Use wizard form
+- Use model relation
+
+### The wizard form approach
+
+In this approach, the fields are placed into different parts, therefore, one field's value can be retrieved and used by another field. 
+
+```python
+class FormWizard(SessionWizardView):
+
+    def get_form_kwargs(self, step=None):
+        kwargs = {}
+        if step == '2':
+            site_num = self.get_cleaned_data_for_step('1')['site_num']
+            kwargs.update({'site_num': site_num,})
+        return kwargs 
+        
+class MyForm(forms.Form):
+    #some fields
+
+class MyForm1(forms.Form):
+    site_num = forms.IntegerField()
+
+class MyForm2(forms.Form):
+    def __init__(self, *args, **kwargs):
+        extra = kwargs.pop('site_num')
+        super(MyForm2, self).__init__(*args, **kwargs)
+
+        for i in range(extra):
+            self.fields['site_name_%s' % i] = forms.CharField()        
+```
