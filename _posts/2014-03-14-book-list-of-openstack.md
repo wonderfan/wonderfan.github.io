@@ -1,6 +1,6 @@
 ---
 layout: book
-title: OpenStack
+title: OpenStack Swift
 category: 读书
 keywords: 阅读,书单,openstack书籍,swift
 books: 
@@ -11,5 +11,5 @@ books:
       language: 英文
       link: http://it-ebooks.info/book/4365
       cover: http://it-ebooks.info/images/ebooks/3/openstack_swift.jpg
-      description:
+      description: explore the swift in-depth
 ---
