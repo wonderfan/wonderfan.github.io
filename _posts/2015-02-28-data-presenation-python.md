@@ -14,18 +14,18 @@ description: pygal - A python svg graph plotting library - A python SVG Charts C
 
 It features various graph types:
 
-- Bar charts
-- Line charts
-- XY charts
-- Pie charts
-- Radar charts
-- Box plot
-- Dot charts
-- Pyramid charts
-- Funnel charts
-- Gauge charts
-- Worldmap charts
-- Country charts
+  - Bar charts
+  - Line charts
+  - XY charts
+  - Pie charts
+  - Radar charts
+  - Box plot
+  - Dot charts
+  - Pyramid charts
+  - Funnel charts
+  - Gauge charts
+  - Worldmap charts
+  - Country charts
 
 
 ### How to install?
@@ -45,7 +45,7 @@ bar_chart.add('Fibonacci', [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55])  # Add some va
 bar_chart.render_to_file('bar_chart.svg')                          # Save the svg to a file
 ```
 
-### What are behind the scenes?
+### What are behind the scene?
 
 - Create different graph types and offer the data methods;
 - Use lxml library to output the data as xml as svg is xml markup element;
