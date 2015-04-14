@@ -30,7 +30,7 @@ Every tablet and smartphone in the world today is supported by jQuery Mobile, in
 - Progressive enhancement is used. Even if the framework can’t load properly, your Web app will work without any enhancements.
 - Accessibility support
 
-### Code Show
+### CODE SHOW
 ---
 ```html
 <!DOCTYPE html> 
