@@ -18,7 +18,7 @@ jQuery Mobile is a framework that delivers Web app experiences to mobile and tab
 Every tablet and smartphone in the world today is supported by jQuery Mobile, including browsers such as iOS, Android, Chrome, Firefox, BlackBerry and Symbian and native platforms such as Apache Cordova (PhoneGap).
 
 ### MAIN FEATURES
-
+---
 - Open-source and free for all kind of usages
 - Cross-platform, cross-device and cross-browser compatible
 - The UI is optimized for touch devices.
@@ -31,13 +31,13 @@ Every tablet and smartphone in the world today is supported by jQuery Mobile, in
 - Accessibility support
 
 ### Code Show
-
+---
 ```html
 <!DOCTYPE html> 
 <html> 
   <head> 
        <meta charset="utf-8"> 
-       <title>My first jQuery Mobile code</title> 
+       <title>jQuery Mobile</title> 
        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script> 
        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
@@ -58,7 +58,7 @@ Every tablet and smartphone in the world today is supported by jQuery Mobile, in
                </ul>           
          </div>   
         <div data-role="footer">
-         <h4>&copy; 2012 Smashing Magazine</h4>
+         <h4>&copy; wonderfan </h4>
         </div> 
     </div> 
     </body> 
