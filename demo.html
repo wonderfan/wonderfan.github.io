@@ -1,28 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Animation</title>
-    <link rel="stylesheet"  type="text/css" href="http://daneden.github.io/animate.css/animate.min.css"/>
-    <style type="text/css">
-      .main {
-        color:red;
-      }
-      .main.content {
-        color:black;
-      }
-      .content {
-        color:blue;
-      }
-    </style>
-  </head>
-  <body>
-    <p class="main">This is my first paragraph</p>
-    <p class="main content"> this is the second text</p>
-    <div class="main">
-      <p class="content">this is the third text</p>
-    </div>
-    <p class="content main"> This is my fourth text</p>
-    <p class="animated infinite bounce">This is animation test</p>
-  
-  </body>
-</html>
+<!DOCTYPE html> 
+<html> 
+  <head> 
+       <meta charset="utf-8"> 
+       <title>My first jQuery Mobile code</title> 
+       <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+       <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script> 
+       <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head> 
+ <body> 
+    <div data-role="page" data-theme="a"> 
+         <div data-role="header"> 
+               <h1>jQuery Mobile</h1> 
+         </div> 
+         <div data-role="content">      
+               <ul data-role="listview" data-inset="true" data-dividertheme="b"> 
+                     <li data-role="list-divider">Options</li> 
+                     <li><a href="option1.html">Option 1</a></li> 
+                     <li><a href="option2.html">Option 2</a></li> 
+                     <li><a href="option3.html">Option 3</a></li> 
+                     <li><a href="option4.html">Option 4</a></li> 
+               </ul>           
+         </div>   
+        <div data-role="footer">
+         <h4>&copy; 2015 wonderfan </h4>
+        </div> 
+    </div> 
+    </body> 
+    </html>
