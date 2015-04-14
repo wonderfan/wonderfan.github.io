@@ -17,7 +17,7 @@ Ionic is also not a good solution if you need to support older generation device
 
 
 ### Quick Start
-
+---
 To start using ionic, you have two options: copy over the built JS and CSS files, or use the `ionic` tool (ionic-cli) which can be installed through npm
 
 ```
@@ -31,7 +31,7 @@ $ ionic start myproject
 ```
 
 ### Code Show
-
+---
 ```html
 <!DOCTYPE html>
 <html>
