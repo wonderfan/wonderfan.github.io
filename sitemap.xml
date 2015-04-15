@@ -13,16 +13,7 @@ layout: nil
   {% for page in site.pages %}
     <url>
       <loc>{{ site.url }}{{ page.url }}</loc>
-      {% if page.url == "home_page_inc" %}
-        <priority>1.0</priority>
-        <changefreq>daily</changefreq>
-      {% else %}
-        {% if page.url contains "home_page" %}
-          <priority>0.1</priority>
-        {% else %}
-          <priority>0.5</priority>
-        {% endif %}
-      {% endif %}
+      <priority>1.0</priority
     </url>
   {% endfor %}
 </urlset>
