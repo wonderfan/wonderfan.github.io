@@ -13,7 +13,7 @@ layout: nil
   {% for page in site.pages %}
     <url>
       <loc>{{ site.url }}{{ page.url }}</loc>
-      <priority>1.0</priority
+      <priority>0.5</priority>
     </url>
   {% endfor %}
 </urlset>
