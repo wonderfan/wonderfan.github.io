@@ -1,11 +1,11 @@
-```
+---
 layout: english
 title: Explain Angular's Directive
 category: 英文
 tags: JavaScript
 keyword: angular,directive,wonderfan
 description: the directive usage in AngularJS
-```
+---
 
 ### Directive Definition Object
 
