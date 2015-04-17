@@ -46,3 +46,9 @@ Controller constructor function. The controller is instantiated before the pre-l
 The scope can be overridden by an optional first argument.
 `function([scope], cloneLinkingFn)`.
 
+#### `require`
+Require another directive and inject its controller as the fourth argument to the linking function. The `require` takes a string name (or array of strings) of the directive(s) to pass in. If an array is used, the injected argument will be an array in corresponding order. If no such directive can be found, or if the directive does not have a controller, then an error is raised. 
+
+#### `controllerAs`
+Controller alias at the directive scope. An alias for the controller so it can be referenced at the directive template. The directive needs to define a scope for this configuration to be used. Useful in the case when directive is used as component.
+
