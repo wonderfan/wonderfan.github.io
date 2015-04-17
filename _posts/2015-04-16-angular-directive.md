@@ -67,4 +67,15 @@ done by passing a map of local variable names and values into the expression wra
 For example, if the expression is `increment(amount)` then we can specify the amount value
 by calling the `localFn` as `localFn({amount: 22})`.
 
+#### `controller`
+Controller constructor function. The controller is instantiated before the
+pre-linking phase and it is shared with other directives (see
+`require` attribute). This allows the directives to communicate with each other and augment
+each other's behavior. The controller is injectable (and supports bracket notation) with the following locals:
 
+`$scope` - Current scope associated with the element
+`$element` - Current element
+`$attrs` - Current attributes object for the element
+`$transclude` - A transclude linking function pre-bound to the correct transclusion scope.
+The scope can be overridden by an optional first argument.
+`function([scope], cloneLinkingFn)`.
