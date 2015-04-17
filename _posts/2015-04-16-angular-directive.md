@@ -24,6 +24,11 @@ If set to true then the current `priority` will be the last set of directives
 which will execute (any directives at the current priority will still execute
 as the order of execution on same `priority` is undefined)
 
+#### `scope`
+**If set to `true`,** then a new scope will be created for this directive. If multiple directives on the
+same element request a new scope, only one new scope is created. The new scope rule does not
+apply for the root of the template since the root of the template always gets a new scope.
+
 **If set to `{}` (object hash),** then a new "isolate" scope is created. The 'isolate' scope differs from
 normal scope in that it does not prototypically inherit from the parent scope. This is useful
 when creating reusable components, which should not accidentally read or modify data in the
