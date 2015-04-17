@@ -52,3 +52,15 @@ Require another directive and inject its controller as the fourth argument to th
 #### `controllerAs`
 Controller alias at the directive scope. An alias for the controller so it can be referenced at the directive template. The directive needs to define a scope for this configuration to be used. Useful in the case when directive is used as component.
 
+#### `restrict`
+String of subset of `EACM` which restricts the directive to a specific directive declaration style. If omitted, the default (attributes only) is used.
+
+ * `E` - Element name: `<my-directive></my-directive>`
+ * `A` - Attribute (default): `<div my-directive="exp"></div>`
+ * `C` - Class: `<div class="my-directive: exp;"></div>`
+ * `M` - Comment: `<!-- directive: my-directive exp -->`
+
+#### `template`
+replace the current element with the contents of the HTML. The replacement process migrates all of the attributes / classes from the old element to the new one. 
+
+You can specify `template` as a string representing the template or as a function which takes two arguments `tElement` and `tAttrs` (described in the `compile` function api below) and returns a string value representing the template.
