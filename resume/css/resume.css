@@ -448,3 +448,9 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+@media (min-width: 1280px){
+    .navbar-toggle {
+      display: none;
+    }
+}
