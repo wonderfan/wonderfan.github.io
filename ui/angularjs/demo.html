@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>AngularJS</title>
+    <!-- use the bootstrap css framework -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap-theme.css">
   </head>
@@ -15,6 +16,7 @@
         <div class="row">
           <div ng-app='myApp' ng-controller='MyController'>
             <div infinite-scroll='loadMore()' infinite-scroll-distance='2'>
+              <!-- use the ng-repeat directive to repeat the img element -->
               <img ng-repeat='image in images' ng-src='http://placehold.it/225x250&text={{image}}'>
             </div>
           </div>
