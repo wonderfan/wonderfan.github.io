@@ -7,8 +7,8 @@ mod.value('THROTTLE_MILLISECONDS', null);
 
 mod.directive('infiniteScroll', [
   '$rootScope', '$window', '$interval', 'THROTTLE_MILLISECONDS', function($rootScope, $window, $interval, THROTTLE_MILLISECONDS) {
-    return {
-      scope: {
+    return { // directive definition object
+      scope: {  
         infiniteScroll: '&',
         infiniteScrollContainer: '=',
         infiniteScrollDistance: '=',
