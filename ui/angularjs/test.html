@@ -17,7 +17,7 @@
           <div>let's see the expression {{1+2}} {{wonder}}</div>
           <div ng-class="{ 'text-success': true, 'text-large': false }">The style sheet should be changed</div>
         </div>
-        <div class="row" ng-controller="mainCtrl">
+        <div class="row" ng-controller="MainCtrl">
           <button ng-click="change"></button>
         </div>
       </div>
@@ -29,8 +29,8 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular-route.min.js"></script>
       <script>
-        angular.module('ng').controller('mainCtrl',mainCtrl);
-        function mainCtrl($scope,$element,$log){
+        angular.module('ng').controller('MainCtrl',MainCtrl);
+        function MainCtrl($scope,$element,$log){
           $scope.change = function(){
             $scope.wonder = 456;
           }
