@@ -17,7 +17,7 @@
           <div ng-controller="mainController">
             <div>The value is {{ name }}</div>
             <div> The ng bind <span ng-bind="name"> </span></div>
-            <div data-name="name + '213'"></div>
+            <div ng-if="name + '213' == '123' "></div>
           </div>
         </div>
       </div>
