@@ -32,7 +32,7 @@
         angular.module('MyApp',[]);
         angular.module('MyApp').controller('MainCtrl',MainCtrl);
        // MainCtrl.$inject = ['$scope','$rootElement','$log'];
-        function MainCtrl($scope){
+        function MainCtrl($scope,$log){
           $scope.change = function(){
             $scope.wonder = 456;
           }
