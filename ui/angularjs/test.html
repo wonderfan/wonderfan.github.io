@@ -29,6 +29,7 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular-route.min.js"></script>
       <script>
+        angular.module('ng').controller('mainCtrl',mainCtrl);
         function mainCtrl($scope,$element,$log){
           $scope.change = function(){
             $scope.wonder = 456;
