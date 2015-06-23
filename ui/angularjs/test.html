@@ -18,7 +18,7 @@
           <div ng-class="{ 'text-success': true, 'text-large': false }">The style sheet should be changed</div>
         </div>
         <div class="row" ng-controller="MainCtrl">
-          <button ng-click="change" class="btn btn-primary btn-lg"></button>
+          <button ng-click="change()" class="btn btn-primary btn-lg"></button>
         </div>
       </div>
     </section>
@@ -29,15 +29,15 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular-route.min.js"></script>
       <script>
-        angular.module('MyApp',[]);
-        angular.module('MyApp').controller('MainCtrl',MainCtrl);
-       MainCtrl.$inject = ['$scope','$log'];
-        function MainCtrl($scope,$log){
+       angular.module('MyApp',[]);
+       angular.module('MyApp').controller('MainCtrl',MainCtrl);
+       MainCtrl.$inject = ['$scope','$element','$log'];
+        function MainCtrl($scope,$element,$log){
           $scope.change = function(){
             $scope.wonder = 456;
           }
           $log.debug("awesome angular application");
-          //$log.debug($rootElement);
+          $log.debug($element);
         }
       </script>
     </section>
