@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap-theme.css">
   </head>
   
-  <body ng-app ng-init="wonder=123" ng-cloak>
+  <body ng-app='MyApp' ng-init="wonder=123" ng-cloak>
     <section data-role="header">
       
     </section>
@@ -29,7 +29,8 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular-route.min.js"></script>
       <script>
-        angular.module('ng').controller('MainCtrl',MainCtrl);
+        angular.module('MyApp',['ng']);
+        angular.module('MyApp').controller('MainCtrl',MainCtrl);
        // MainCtrl.$inject = ['$scope','$rootElement','$log'];
         function MainCtrl($scope){
           $scope.change = function(){
