@@ -30,8 +30,8 @@
       <script>
         angular.module('app').controller('mainController', mainController);
         mainController.$inject = ['$rootScope'];
-        function mainController($rootScope){
-          $rootScope.name = "wu han";
+        function mainController($scope){
+          $scope.name = "wu han";
         }
       </script>
     </section>
