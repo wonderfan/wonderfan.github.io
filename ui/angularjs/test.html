@@ -30,6 +30,7 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular-route.min.js"></script>
       <script>
         angular.module('app').controller('mainController', main_controller);
+        main_controller.$inject = ['$scope'];
         function main_controller($scope){
           $scope.name = "wu han";
         }
