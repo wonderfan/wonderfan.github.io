@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap-theme.css">
   </head>
   
-  <body ng-app ng-init="wonder=text-success">
+  <body ng-app ng-init="wonder=true">
     <section data-role="header">
       
     </section>
@@ -15,7 +15,7 @@
       <div class="container">
         <div class="row">
           <div>let's see the expression {{1+2}}</div>
-          <div ng-class="wonder">The style sheet should be changed</div>
+          <div ng-class="{ 'text-success': wonder, 'text-large': wonder }">The style sheet should be changed</div>
         </div>
       </div>
     </section>
