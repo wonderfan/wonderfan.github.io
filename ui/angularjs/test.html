@@ -30,12 +30,12 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular-route.min.js"></script>
       <script>
         angular.module('ng').controller('MainCtrl',MainCtrl);
-        function MainCtrl($scope,$element,$log){
+        function MainCtrl($scope,$rootElement,$log){
           $scope.change = function(){
             $scope.wonder = 456;
           }
           $log.debug("awesome angular application");
-          $log.debug($element);
+          $log.debug($rootElement);
         }
       </script>
     </section>
