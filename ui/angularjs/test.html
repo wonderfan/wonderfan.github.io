@@ -9,12 +9,12 @@
   
   <body ng-app='MyApp' ng-init="wonder=123" ng-cloak>
     <section data-role="header">
-      
     </section>
     <section data-role="main">
       <div class="container">
         <div class="row">
-          <div>let's see the expression {{1+2}} {{wonder}}</div>
+          <div>let's see the expression {{1+2}}</div>
+          <div ng-model="wonder"></div>
           <div ng-class="{ 'text-success': true, 'text-large': false }">The style sheet should be changed</div>
         </div>
         <div class="row" ng-controller="MainCtrl">
