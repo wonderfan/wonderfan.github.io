@@ -33,9 +33,9 @@
        angular.module('MyApp').controller('MainCtrl',MainCtrl);
        MainCtrl.$inject = ['$scope','$element','$log'];
         function MainCtrl($scope,$element,$log){
-          $scope.flag = true;
+          $scope.flag = false;
           $scope.change = function(){
-            $scope.flag = false;
+            $scope.flag = true;
             $log.warn("the click event is handled");
           }
           $log.debug("awesome angular application");
