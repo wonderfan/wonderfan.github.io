@@ -31,7 +31,7 @@
       <script>
        angular.module('MyApp',[]);
        angular.module('MyApp').controller('MainCtrl',MainCtrl);
-       MainCtrl.$inject = ['$scope','$element','$log'];
+       MainCtrl.$inject = ['$rootScope','$element','$log'];
         function MainCtrl($scope,$element,$log){
           $scope.flag = false;
           $scope.change = function(){
