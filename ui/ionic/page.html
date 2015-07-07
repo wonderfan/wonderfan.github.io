@@ -43,6 +43,11 @@
           for (var i = 0; i < 20; i++) {
             $scope.items.push('Item ' + i);
           }
+          $scope.showFooter = true;
+          $scope.toggleFooter = function(){
+              console.log("toggle footer");
+              $scope.showFooter = !$scope.showFooter;
+          }
         });        
     </script>
 </body>
