@@ -14,7 +14,7 @@
     <section data-role="main">
       <div class="container">
         <div class="row">
-          <div ng-app='myApp' ng-controller='MyController'>
+          <div ng-app='myApp' ng-controller='MyController as vm'>
             <div infinite-scroll='loadMore()' infinite-scroll-distance='2'>
               <!-- use the ng-repeat directive to repeat the img element -->
               <img ng-repeat='image in images' ng-src='http://placehold.it/225x250&text={{image}}'>
