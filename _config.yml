@@ -8,17 +8,17 @@ kramdown:
 author: 
   name:  wonderfan
   email: phpjavaphp@gmail.com
-  link:  http://www.wonderfan.net
+  link:  http://wonderfan.github.io
   weibo: http://weibo.com/phpjavaphp
   github: http://github.com/wonderfan
 
 title: wonderfan的博客 
 description: wonderfan的博客
-url: http://www.wonderfan.net
+url: http://wonderfan.github.io
 rss_url: /pages/atom.xml
 
-gavatar: http://www.wonderfan.net/logo.png
-favicon: http://www.wonderfan.net/favicon.ico
+gavatar: http://www.wonderfan.github.io/logo.png
+favicon: http://www.wonderfan.github.io/favicon.ico
 
 ga:
   id: UA-56789989-1
