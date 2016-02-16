@@ -17,8 +17,8 @@ description: wonderfan的博客
 url: http://wonderfan.github.io
 rss_url: /pages/atom.xml
 
-gavatar: http://www.wonderfan.github.io/logo.png
-favicon: http://www.wonderfan.github.io/favicon.ico
+gavatar: http://wonderfan.github.io/logo.png
+favicon: http://wonderfan.github.io/favicon.ico
 
 ga:
   id: UA-56789989-1
