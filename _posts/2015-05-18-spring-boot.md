@@ -1,6 +1,6 @@
 ---
 layout: english
-titile: Get started with Spring Boot
+title: Get started with Spring Boot
 category: 英文
 tags: Java
 keywords: java,spring,boot,wonderfan
