@@ -10,4 +10,4 @@ description: use spring mvc with spring boot
 ### Spring History
 ---
 
-![spring history](images/book/spring/spring-history.png)
+![spring history](/images/book/spring/spring-history.png)
