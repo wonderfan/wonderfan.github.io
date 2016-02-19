@@ -1,6 +1,6 @@
 ---
 layout: english
-titile: A glimpse of PHP Constructor
+title: A glimpse of PHP Constructor
 category: 英文
 tags: PHP
 keywords: PHP,constructor,wonderfan
