@@ -41,3 +41,26 @@ public class Application {
 }
 
 ```
+
+
+### Configuration
+
+Spring Boot gets out of your way pretty quickly when you need to override its configuration defaults. By default, application configuration can be defined using a Java properties file at the root of the application’s classpath named application.properties. A preferred approach, however, is to use YAML configuration, which gives structure and depth to nested configuration. Given the presence of the snakeyaml dependency on the application’s runtime classpath, your project can then define configuration directives in an application.yml file.
+
+```yaml
+# Server settings (ServerProperties)
+server:
+  port: 8080
+  address: 127.0.0.1
+  sessionTimeout: 30
+  contextPath: /
+
+  # Tomcat specifics
+  tomcat:
+    accessLogEnabled: false
+    protocolHeader: x-forwarded-proto
+    remoteIpHeader: x-forwarded-for
+    basedir:
+    backgroundProcessorDelay: 30 # secs
+
+```
