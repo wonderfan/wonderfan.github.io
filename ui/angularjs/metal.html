@@ -1,12 +1,7 @@
-<script>
+<script type="text/javascript">
   console.log("check js");
   alert("monitor");
 </script>
-
-<div ng-controller="metalController">
-<input  type="text" name="name" ng-model="name" />
-<p>The name is : {{name}}</p>
-</div>
 
 <script>
   function metalController($scope){
@@ -16,3 +11,10 @@
   angular.module('MyApp').controller('metalController',metalController);
   
 </script>
+
+<div ng-controller="metalController">
+<input  type="text" name="name" ng-model="name" />
+<p>The name is : {{name}}</p>
+</div>
+
+
