@@ -21,10 +21,10 @@
           <button ng-click="change()" class="btn btn-default btn-lg">Click Me</button>
         </div>
         <div class="row">
-          <div ng-include="host.html"></div>
+          <div ng-include="host"></div>
         </div>
         <div class="row">
-          <div ng-include="metal.html"></div>
+          <div ng-include="'metal.html'"></div>
         </div>
       </div>
     </section>
@@ -40,6 +40,8 @@
        MainCtrl.$inject = ['$rootScope','$element','$log'];
         function MainCtrl($scope,$element,$log){
           $scope.flag = false;
+          $scope.name = "it is main";
+          $scope.host = "host.html";
           $scope.change = function(){
             $scope.flag = true;
             $log.warn("the click event is handled");
