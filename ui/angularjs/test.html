@@ -58,6 +58,16 @@
         angular.module('MyApp').controller('hostController',hostController);
         
       </script>
+      
+<script>
+  function metalController($scope){
+     $scope.name = "it is metal";
+  }
+  metalController.$inject = ['$scope'];
+  angular.module('MyApp').controller('metalController',metalController);
+  alert(345);
+</script>
+
     </section>
   </body>
   
