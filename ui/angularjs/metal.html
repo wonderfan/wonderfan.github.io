@@ -1,4 +1,13 @@
-<div>
+<div ng-controller="metalController">
 <input  type="text" name="name" ng-model="name" />
 <p>The name is : {{name}}</p>
 </div>
+
+<script type="text/javascript">
+  function metalController($scope){
+     $scope.name = "it is metal";
+  }
+  metalController.$inject = ['$scope'];
+  angular.module('MyApp').controller('metalController',metalController);
+  
+</script>
