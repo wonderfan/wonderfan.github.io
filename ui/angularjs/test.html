@@ -24,7 +24,7 @@
           <div ng-include="host.html"></div>
         </div>
         <div class="row">
-          <div ng-include="metal.html"
+          <div ng-include="metal.html"></div>
         </div>
       </div>
     </section>
@@ -49,6 +49,13 @@
           window.wonscope = $scope;
           window.wonelement = $element;
         }
+        function hostController($scope){
+          $scope.name = "it is host";
+        }
+        hostCtroller.$inject = ['$scope'];
+        
+        angular.module('MyApp').controller('hostController',hostController);
+        
       </script>
     </section>
   </body>
