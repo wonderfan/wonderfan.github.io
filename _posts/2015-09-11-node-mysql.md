@@ -12,6 +12,7 @@ description: mysql best practise
 - 控制工具：`mysql-ctl --help`
 - 启动：`mysql-ctl start`
 - 命令行：`mysql-ctl cli`
+- 默认配置：`{user:'root',database:'c9',password:''}`
 
 
 ### 模块依赖
