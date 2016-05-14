@@ -9,4 +9,6 @@ description: Sails best practise
 
 ### 准备工作
 
-1. 安装Sails `npm install sails --global`
+1. 安装Sails: `npm install sails --global`
+2. 创建工程: `sails new yourapp`
+3. 创建API: `cd youapp;  sails generate api user`
