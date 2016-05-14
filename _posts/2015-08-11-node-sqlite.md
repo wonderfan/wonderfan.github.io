@@ -10,7 +10,7 @@ description: sqlite best practise
 ### 安装模块
 
 -  `npm install sqlite3 --save`
--  `npm install uuid`
+-  `npm install uuid  --save`
 
 
 ### 代码实操
