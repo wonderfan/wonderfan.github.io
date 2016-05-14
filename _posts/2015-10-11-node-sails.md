@@ -11,7 +11,7 @@ description: Sails best practise
 
 1. 安装Sails: `npm install sails --global`
 2. 创建工程: `sails new yourapp`
-3. 创建API: `cd youapp;  sails generate api user`
+3. 创建API: `cd yourapp;  sails generate api user`
 
 ### 数据模型
 
