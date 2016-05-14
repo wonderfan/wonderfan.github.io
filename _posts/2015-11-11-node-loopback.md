@@ -35,3 +35,21 @@ module.exports = function(app) {
 
 ### Remote Method
 
+```js
+module.exports = function(Contact) {
+    Contact.getName = function(id,cb){
+        Contact.findOne({where:{id:id}},function(err,contact){
+            if(err) throw err;
+            cb(null,contact);
+        });
+    };
+
+    Contact.remoteMethod('getName', 
+        {
+            http: {path:'/name', verb:'post'},
+            accepts:{ arg:'id', type:'number'},
+            returns:{arg:'contact', type:'object'}
+        }
+    );    
+};
+```
