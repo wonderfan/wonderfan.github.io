@@ -34,9 +34,10 @@ module.exports = {
 ### Controller
 
 在api/controllers目录下，定义controller中的action
+
 ```js
 module.exports = {
-  users: function (req, res) {
+  getUserInfo: function (req, res) {
     User.find({id:1}).exec(function(err,user){
       if(err){
         return res.json({data:"no data"});
@@ -89,7 +90,7 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
-  '/user':"UserController.users"
+  '/user':"UserController.getUserInfo"
 };
 ```
 
