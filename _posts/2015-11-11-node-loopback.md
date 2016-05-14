@@ -9,11 +9,11 @@ description: LoopBack实战
 
 ### 准备工作
 
--  : `npm install strongloop --global`
--  : `slc loopback:app yourapp`
--  : `cd yourapp`
--  : `slc loopback:datasource`
--  : `slc loopback:model`
+-  安装strongloop : `npm install strongloop --global`
+-  创建应用 : `slc loopback:app yourapp`
+-  切换目录 : `cd yourapp`
+-  创建数据源 : `slc loopback:datasource`
+-  创建模型 : `slc loopback:model`
 
 ### Auto Migration/Update
 
@@ -53,3 +53,8 @@ module.exports = function(Contact) {
     );    
 };
 ```
+
+### 使用API Explorer
+
+- 启动 `node .`
+- 访问 `http://127.0.0.1/explorer`
