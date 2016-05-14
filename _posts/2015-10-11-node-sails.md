@@ -51,7 +51,7 @@ module.exports = {
 
 ### 必要配置
 
-1. local.js
+- local.js
 
 ```js
 module.exports = {
@@ -61,7 +61,7 @@ module.exports = {
 };
 ```
 
-2. connections.js
+- connections.js
 
 ```js
 module.exports.connections = {
@@ -74,7 +74,7 @@ module.exports.connections = {
 };
 ```
 
-3. models.js
+- models.js
 
 ```js
 module.exports.models = {
@@ -83,7 +83,7 @@ module.exports.models = {
 };
 ```
 
-4. routes.js
+- routes.js
 
 ```js
 module.exports.routes = {
