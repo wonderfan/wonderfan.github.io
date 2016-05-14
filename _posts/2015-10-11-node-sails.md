@@ -16,9 +16,9 @@ description: Sails best practise
 ### 数据模型
 
 在api/models目录下，定义User模型
+
 ```js
 module.exports = {
-
   attributes: {
     id: {
       type: 'integer',
@@ -29,7 +29,6 @@ module.exports = {
     city: 'string'
   }
 };
-
 ```
 
 ### Controller
