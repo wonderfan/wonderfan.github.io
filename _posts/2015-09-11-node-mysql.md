@@ -9,6 +9,10 @@ description: mysql best practise
 
 ### C9 MySQL 数据库
 
+- 控制工具：`mysql-ctl --help`
+- 启动：`mysql-ctl start`
+- 命令行：`mysql-ctl cli`
+
 
 ### 模块依赖
 
