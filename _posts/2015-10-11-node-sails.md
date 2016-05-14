@@ -52,6 +52,7 @@ module.exports = {
 ### 必要配置
 
 1. local.js
+
 ```js
 module.exports = {
    host: '0.0.0.0',
@@ -61,6 +62,7 @@ module.exports = {
 ```
 
 2. connections.js
+
 ```js
 module.exports.connections = {
   mysql: {
@@ -73,6 +75,7 @@ module.exports.connections = {
 ```
 
 3. models.js
+
 ```js
 module.exports.models = {
   connection: 'mysql',
@@ -81,6 +84,7 @@ module.exports.models = {
 ```
 
 4. routes.js
+
 ```js
 module.exports.routes = {
   '/': {
@@ -88,7 +92,6 @@ module.exports.routes = {
   },
   '/user':"UserController.users"
 };
-
 ```
 
 ### API验收
