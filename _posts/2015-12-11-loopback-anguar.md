@@ -16,7 +16,7 @@ description: AngularJS与LoopBack
 
 ### AngularJS SDK使用之道
 
-- cli : `lb-ng server/server.app client/js/resource.js`
+- cli : `lb-ng server/server.js client/js/resource.js`
 
 
 ### 代码样例
