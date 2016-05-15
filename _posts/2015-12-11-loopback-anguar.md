@@ -9,9 +9,9 @@ description: AngularJS与LoopBack
 
 ### AngularJS SDK剖析
 
-- 提供cli和yeoman generator；
-- 根据暴露api提供ngResource的封装；
-- 解决authorization问题
+- 提供cli和yeoman generator;
+- 根据暴露api提供ngResource的封装;
+- 解决authorization问题;
 
 
 ### AngularJS SDK使用之道
@@ -1955,3 +1955,7 @@ module
 })(window, window.angular);
 
 ```
+
+### Reference
+
+- https://www.npmjs.com/package/loopback-angular-ui-router
