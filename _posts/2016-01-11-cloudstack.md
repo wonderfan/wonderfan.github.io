@@ -7,7 +7,7 @@ keywords: cloudstack,wonderfan
 description: 剖析cloudstack中虚机的创建过程
 ---
 
-### UI Side
+### UI Action
 
 ```
 	var clientApiUrl = "/client/api";
@@ -32,4 +32,14 @@ description: 剖析cloudstack中虚机的创建过程
 	})
 ```
 
-### 
+### API Handling
+
+1. DeployVMCmdByAdmin.java
+```
+@APICommand(name = "deployVirtualMachine", description = "Creates and automatically starts a virtual machine based on a service offering, disk offering, and template.", responseObject = UserVmResponse.class, responseView = ResponseView.Full, entityType = {VirtualMachine.class},requestHasSensitiveInfo = false, responseHasSensitiveInfo = true)
+public class DeployVMCmdByAdmin extends DeployVMCmd {
+    .......
+}
+```
+
+2. service
