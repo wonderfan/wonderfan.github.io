@@ -32,7 +32,13 @@ description: 剖析cloudstack中虚机的创建过程
 	})
 ```
 
-### API Handling
+### API Service
+
+```
+@Component
+public class ApiServer extends ManagerBase implements HttpRequestHandler, ApiServerService {
+}
+```
 
 1. DeployVMCmdByAdmin.java
 ```
