@@ -10,7 +10,7 @@ description: 剖析cloudstack中虚机的创建过程
 ### UI Action
 
 ```
-	var clientApiUrl = "/client/api";
+    var clientApiUrl = "/client/api";
 	
     function createURL(apiName, options) {
         if (!options) options = {};
@@ -37,6 +37,8 @@ description: 剖析cloudstack中虚机的创建过程
 ```
 @Component
 public class ApiServer extends ManagerBase implements HttpRequestHandler, ApiServerService {
+    @Inject
+    private ApiDispatcher dispatcher;
 }
 ```
 
