@@ -10,6 +10,8 @@ description: 剖析cloudstack中虚机的创建过程
 ### UI Side
 
 ```
+	var clientApiUrl = "/client/api";
+	
     function createURL(apiName, options) {
         if (!options) options = {};
         var urlString = clientApiUrl + "?" + "command=" + apiName + "&response=json";
