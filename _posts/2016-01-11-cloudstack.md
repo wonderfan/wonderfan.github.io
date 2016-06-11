@@ -34,7 +34,7 @@ description: 剖析cloudstack中虚机的创建过程
 
 ### API Service
 
-1. ApiServlet.java
+- ApiServlet.java
 ```
 @Component("apiServlet")
 @SuppressWarnings("serial")
@@ -44,7 +44,7 @@ public class ApiServlet extends HttpServlet {
 }
 ```
 
-2. ApiServer.java
+- ApiServer.java
 ```
 @Component
 public class ApiServer extends ManagerBase implements HttpRequestHandler, ApiServerService {
@@ -53,7 +53,16 @@ public class ApiServer extends ManagerBase implements HttpRequestHandler, ApiSer
 }
 ```
 
-3. DeployVMCmdByAdmin.java
+- ApiDispatcher.java
+```
+public class ApiDispatcher {
+     public void dispatch(final BaseCmd cmd, final Map<String, String> params, final boolean execute) throws Exception {
+         cmd.execute();
+     }
+}
+```
+
+- DeployVMCmdByAdmin.java
 ```
 @APICommand(name = "deployVirtualMachine", description = "Creates and automatically starts a virtual machine based on a service offering, disk offering, and template.", responseObject = UserVmResponse.class, responseView = ResponseView.Full, entityType = {VirtualMachine.class},requestHasSensitiveInfo = false, responseHasSensitiveInfo = true)
 public class DeployVMCmdByAdmin extends DeployVMCmd {
@@ -61,4 +70,3 @@ public class DeployVMCmdByAdmin extends DeployVMCmd {
 }
 ```
 
-4. service
