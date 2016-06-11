@@ -110,3 +110,10 @@ public class VirtualMachineManagerImpl extends ManagerBase implements VirtualMac
 
 }
 ```
+
+- AgentManager.java
+```
+public class AgentManagerImpl extends ManagerBase implements AgentManager, HandlerFactory, Configurable {
+ 
+ }
+```
