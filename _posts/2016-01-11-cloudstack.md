@@ -85,3 +85,16 @@ public class DeployVMCmdByAdmin extends DeployVMCmd {
                 isIso, sshPublicKey, networkNicMap, id, instanceName, uuidName, hypervisorType, customParameters);
     }
 ```
+
+- CloudOrchestrator.java
+```
+@Component
+public class CloudOrchestrator implements OrchestrationService {
+    
+    @Override
+    public VirtualMachineEntity createVirtualMachine(String id, String owner, String templateId, String hostName, String displayName, String hypervisor, int cpu){
+        _itMgr.allocate(vm.getInstanceName(), _templateDao.findById(new Long(templateId)), computeOffering, rootDiskOfferingInfo, dataDiskOfferings, networkIpMap, plan,hypervisorType);   
+    }
+    
+}
+```
