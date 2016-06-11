@@ -90,6 +90,9 @@ public class DeployVMCmdByAdmin extends DeployVMCmd {
 ```
 @Component
 public class CloudOrchestrator implements OrchestrationService {
+
+    @Inject
+    private VirtualMachineManager _itMgr;
     
     @Override
     public VirtualMachineEntity createVirtualMachine(String id, String owner, String templateId, String hostName, String displayName, String hypervisor, int cpu){
