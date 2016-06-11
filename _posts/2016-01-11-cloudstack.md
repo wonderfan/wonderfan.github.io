@@ -8,7 +8,6 @@ description: 剖析cloudstack中虚机的创建过程
 ---
 
 ### UI Action
-
 ```
     var clientApiUrl = "/client/api";
 	
