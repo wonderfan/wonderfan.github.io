@@ -8,6 +8,7 @@ description: 剖析cloudstack中虚机的创建过程
 ---
 
 ### UI Action
+
 ```
     var clientApiUrl = "/client/api";
 	
@@ -25,15 +26,16 @@ description: 剖析cloudstack中虚机的创建过程
         return urlString;
     }
 
-	$.ajax({
-	   url: createURL('deployVirtualMachine'),
-	   data: deployVmData
-	})
+    $.ajax({
+        url: createURL('deployVirtualMachine'),
+	data: deployVmData
+    })
 ```
 
 ### API Service
 
 - ApiServlet.java
+
 ```
 @Component("apiServlet")
 @SuppressWarnings("serial")
@@ -44,6 +46,7 @@ public class ApiServlet extends HttpServlet {
 ```
 
 - ApiServer.java
+
 ```
 @Component
 public class ApiServer extends ManagerBase implements HttpRequestHandler, ApiServerService {
@@ -53,6 +56,7 @@ public class ApiServer extends ManagerBase implements HttpRequestHandler, ApiSer
 ```
 
 - ApiDispatcher.java
+
 ```
 public class ApiDispatcher {
      public void dispatch(final BaseCmd cmd, final Map<String, String> params, final boolean execute) throws Exception {
@@ -62,6 +66,7 @@ public class ApiDispatcher {
 ```
 
 - DeployVMCmdByAdmin.java
+
 ```
 @APICommand(name = "deployVirtualMachine", description = "Creates and automatically starts a virtual machine based on a service offering, disk offering, and template.", responseObject = UserVmResponse.class, responseView = ResponseView.Full, entityType = {VirtualMachine.class},requestHasSensitiveInfo = false, responseHasSensitiveInfo = true)
 public class DeployVMCmdByAdmin extends DeployVMCmd {
@@ -72,6 +77,7 @@ public class DeployVMCmdByAdmin extends DeployVMCmd {
 ### DB Action
 
 - UserVmManagerImpl.java
+
 ```
     @DB
     protected UserVm createVirtualMachine(DataCenter zone, ServiceOffering serviceOffering, VirtualMachineTemplate tmplt, String hostName, String displayName, Account owner,
@@ -86,6 +92,7 @@ public class DeployVMCmdByAdmin extends DeployVMCmd {
 ```
 
 - CloudOrchestrator.java
+
 ```
 @Component
 public class CloudOrchestrator implements OrchestrationService {
@@ -104,6 +111,7 @@ public class CloudOrchestrator implements OrchestrationService {
 ### Backend Manager
 
 - VirtualMachineManager.java
+
 ```
 public class VirtualMachineManagerImpl extends ManagerBase implements VirtualMachineManager, VmWorkJobHandler, Listener, Configurable {
 
@@ -111,6 +119,7 @@ public class VirtualMachineManagerImpl extends ManagerBase implements VirtualMac
 ```
 
 - AgentManager.java
+
 ```
 public class AgentManagerImpl extends ManagerBase implements AgentManager, HandlerFactory, Configurable {
  
