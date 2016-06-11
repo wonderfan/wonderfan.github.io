@@ -101,3 +101,12 @@ public class CloudOrchestrator implements OrchestrationService {
     
 }
 ```
+
+### Backend Manager
+
+- VirtualMachineManager.java
+```
+public class VirtualMachineManagerImpl extends ManagerBase implements VirtualMachineManager, VmWorkJobHandler, Listener, Configurable {
+
+}
+```
