@@ -14,3 +14,8 @@ description: How agent and message bus work in the CloudStack platform?
 dispatcher中根据是否为create action和其他action进行了异步和同步的两种不同的处理，属于优化流程的范畴。
 
 在获得具体的command实体类以及做完必要的数据库存储后，request会传递到agent manager。agent manager负责管理agent以及处理command的request。
+
+agent manage 提供了两个机制，一个是attach agent，另外一个机制是提供manager server和agent之间的通信。attach agent的目的是使用正确和合适的agent去处理command request。 在agent中，server resource对象会被加载进来。 server resource对象是每个虚拟化实现的封装，通过它可以操作底层的虚拟化资源。
+
+### Message Bus
+
