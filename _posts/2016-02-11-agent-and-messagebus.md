@@ -19,3 +19,4 @@ agent manage 提供了两个机制，一个是attach agent，另外一个机制�
 
 ### Message Bus
 
+cloudstack中的message bus设置的主要目的是解决底层资源和数据库中资源的同步问题，使用的机制主要是topic。message bus 提供的四种机能，可以根据不同的应用场景而使用。这四种功能分别是rpc call，publish message，subscribe message 和 message listener。
