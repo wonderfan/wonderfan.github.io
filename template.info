@@ -5,7 +5,7 @@ layout: post
 title: 
 category: 中文
 tags: Python
-keywords: 阿樊提,xlrd,python,,wonderfan
+keywords: python,wonderfan
 description: 
 ---
 
@@ -18,5 +18,17 @@ title:
 category: 中文
 tags: NodeJS
 keywords: node,node.js,阿樊提,wonderfan
+description: 
+---
+
+
+cloud section:
+
+---
+layout: post
+title: 
+category: 中文
+tags: Cloud
+keywords: openstack,cloudstack,wonderfan
 description: 
 ---
