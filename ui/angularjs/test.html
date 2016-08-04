@@ -12,7 +12,8 @@
     </section>
     <section data-role="main">
       <div class="container" ng-controller="MainCtrl">
-        <select data-ng-model="city" data-ng-options="item.id as item.name for item in citys">
+        <select data-ng-model="city" data-ng-options="item.name as item.name for item in citys">
+          <option value="default">please select</option>
         </select>
         <pre>{{city}}</pre>
         <div class="row">
@@ -45,7 +46,7 @@
                $scope.city = "default";
                
      $scope.citys = [{uuid:"a",id:5,name:"wh"},{uuid:"b",id:2,name:"sh"}];
-     $scope.citys.unshift({name:"default"});
+     //$scope.citys.unshift({name:"default"});
           $scope.flag = false;
           $scope.name = "it is main";
           $scope.host = "host.html";
