@@ -12,8 +12,7 @@
     </section>
     <section data-role="main">
       <div class="container" ng-controller="MainCtrl">
-        <select data-ng-model="city" data-ng-options="item.name as item.uuid for item in citys">
-          <option value="">please select</option>
+        <select data-ng-model="city" data-ng-options="item.name as item.name for item in citys">
         </select>
         <pre>{{city}}</pre>
         <div class="row">
@@ -43,8 +42,10 @@
        angular.module('MyApp').controller('MainCtrl',MainCtrl);
        MainCtrl.$inject = ['$rootScope','$element','$log'];
         function MainCtrl($scope,$element,$log){
-               $scope.city = "";
+               $scope.city = "default";
+               
      $scope.citys = [{uuid:"a",id:5,name:"wh"},{uuid:"b",id:2,name:"sh"}];
+     $scope.citys.unshift({name:"default"});
           $scope.flag = false;
           $scope.name = "it is main";
           $scope.host = "host.html";
