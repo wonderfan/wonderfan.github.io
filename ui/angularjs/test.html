@@ -12,7 +12,7 @@
     </section>
     <section data-role="main">
       <div class="container" ng-controller="MainCtrl">
-        <select data-ng-model="city" data-ng-options="item.name as item.name for item in citys">
+        <select data-ng-model="city" data-ng-options="item.id as item.name for item in citys">
         </select>
         <pre>{{city}}</pre>
         <div class="row">
