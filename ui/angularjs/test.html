@@ -13,8 +13,9 @@
     <section data-role="main">
       <div class="container" ng-controller="MainCtrl">
         <select data-ng-model="city" data-ng-options="item.name as item.uuid for item in citys">
-          <option>please select</option>
+          <option value="">please select</option>
         </select>
+        <pre>{{city}}</pre>
         <div class="row">
           <div>let's see the expression {{1+2}}</div>
           <div ng-bing="flag"></div>
