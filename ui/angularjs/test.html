@@ -16,6 +16,7 @@
           <option value="">please select</option>
         </select>
         <pre>{{city}}</pre>
+        <pre>{{city == ""}}</pre>
         <div class="row">
           <div>let's see the expression {{1+2}}</div>
           <div ng-bing="flag"></div>
@@ -43,7 +44,7 @@
        angular.module('MyApp').controller('MainCtrl',MainCtrl);
        MainCtrl.$inject = ['$rootScope','$element','$log'];
         function MainCtrl($scope,$element,$log){
-               $scope.city = "default";
+               $scope.city = "";
                
      $scope.citys = [{uuid:"a",id:5,name:"wh"},{uuid:"b",id:2,name:"sh"}];
      //$scope.citys.unshift({name:"default"});
