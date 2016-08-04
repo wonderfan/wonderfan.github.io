@@ -1,7 +1,7 @@
 <div ng-controller="metalController">
 <input  type="text" name="name" ng-model="name" />
-<select ng-model="city" ng-options="label item.name for (item.name,item.name) in citys">
-	<option value="default">please select</option>
+<select ng-model="city" ng-options=" item.name for item in citys">
+	<option value="">please select</option>
 </select>
 <p>The name is : {{name}}</p>
 <p ng-include="'info.html'"></p>
