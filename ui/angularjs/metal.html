@@ -1,8 +1,5 @@
 <div ng-controller="metalController">
 <input  type="text" name="name" ng-model="name" />
-<select ng-model="city" ng-options=" item.name as item.uuid for item in citys">
-	<option value="">please select</option>
-</select>
 <p>The name is : {{name}}</p>
 <p ng-include="'info.html'"></p>
 </div>
