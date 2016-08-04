@@ -58,6 +58,8 @@
         angular.module('MyApp').controller('hostController',hostController);
   function metalController($scope){
      $scope.name = "it is metal";
+     $scope.city = "wh";
+     $scope.citys = [{id:1,name:"wh"},{id:2,name:"sh"}];
   }
   metalController.$inject = ['$scope'];
   angular.module('MyApp').controller('metalController',metalController);        
