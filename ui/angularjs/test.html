@@ -16,7 +16,7 @@
           <option value="">please select</option>
         </select>
         <pre>{{city}}</pre>
-        <pre>{{city == ""}}</pre>
+        <pre>{{my_city}}</pre>
         <div class="row">
           <div>let's see the expression {{1+2}}</div>
           <div ng-bing="flag"></div>
@@ -40,6 +40,7 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular-route.min.js"></script>
       <script>
+      var my_city = "wuhan";
        angular.module('MyApp',[]);
        angular.module('MyApp').controller('MainCtrl',MainCtrl);
        MainCtrl.$inject = ['$rootScope','$element','$log'];
