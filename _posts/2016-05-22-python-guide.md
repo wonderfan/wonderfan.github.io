@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python Guide
-category: english
+category: 英文
 tags: Python
 keywords: golang,wonderfan
 description: docker compose
