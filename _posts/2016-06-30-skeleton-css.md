@@ -15,11 +15,13 @@ description: Skeleton的应用场景
 Skeleton CSS的定位凸显出了Skeleton的出发点和最大优势所在：mobile-first策略。
 
 在Skeleton CSS网站中，罗列出了Skeleton的三大优势:
+
 - Light as a feather at ~400 lines & built with mobile in mind.
 - Styles designed to be a starting point, not a UI framework.
 - Quick to start with zero compiling or installing necessary.
 
 Skeleton CSS包括的内容：
+
 - normalize
 - Grid
 - Base Styles
