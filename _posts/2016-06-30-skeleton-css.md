@@ -10,6 +10,7 @@ description: Skeleton的应用场景
 ### Skeleton CSS简介
 
 在Skeleton CSS的官方网站中，对Skeleton CSS给出的定义是：
+
 > Skeleton is a simple, responsive boilerplate to kickstart any responsive project.
 
 Skeleton CSS的定位凸显出了Skeleton的出发点和最大优势所在：mobile-first策略。
