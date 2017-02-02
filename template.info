@@ -4,31 +4,7 @@ python section:
 layout: post
 title: 
 category: 中文/英文
-tags: Python
-keywords: python,wonderfan
-description: 
----
-
-
-node section:
-
----
-layout: post
-title: 
-category: 中文/英文
-tags: NodeJS
-keywords: node,node.js,阿樊提,wonderfan
-description: 
----
-
-
-cloud section:
-
----
-layout: post
-title: 
-category: 中文/英文
-tags: Cloud
-keywords: openstack,cloudstack,wonderfan
+tags: 
+keywords: wonderfan
 description: 
 ---
