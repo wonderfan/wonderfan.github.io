@@ -34,3 +34,9 @@ The cmd package is a tool for managing Go source code.
 
 ### Code Anatomy
 
+1. Use the main package and main function to process the commands;
+2. define one command structure type to stand for the element composition of commands;
+3. use array to contain each instance of specified command;
+4. use flag package to get the arguments from the command line;
+5. iterate the commands collection and find the matched one against the arguments
+6. conduct the Run function of target command instance.
