@@ -1,4 +1,4 @@
-post metadata:
+Post Metadata:
 
 ---
 layout: post
@@ -8,3 +8,8 @@ tags:
 keywords: wonderfan
 description: 
 ---
+
+Topic List:
+
+1. The JavaScript builtin objects;
+2. The Python standard library;
