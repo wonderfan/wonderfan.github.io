@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: The basic content of D3 library
@@ -11,6 +10,7 @@ description: how to use D3?
 
 ### The significant role of D3 library
 
+It can bring data to life with SVG, Canvas and HTML.
 
 ### The elements and perspectives in D3 world:
 
