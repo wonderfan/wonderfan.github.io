@@ -6,12 +6,15 @@
     </style>
   </head>
   <body>
-    <div class="first-picture">
-      <h1>Open your magic creation and draw your canvas</h1>
-    
+    <div class="canvas-container">
+      <canvas id="canvas" class="canvas" width="600" height="600"></canvas>
     </div>
     <script>
-    
+      var canvasEl = document.getElementById("canvas");
+      var context = canvasEl.getContext("2d");
+      context.beginPath();
+      context.moveTo(10,10);
+      context.lineTo(50,50);
     </script>
   </body>
 </html>
