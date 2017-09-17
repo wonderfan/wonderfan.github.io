@@ -12,13 +12,21 @@
     <script>
       var canvasEl = document.getElementById("canvas");
       var context = canvasEl.getContext("2d");
-      context.font = '40pt Calibri';
+      // add the text and specify the text font/color
+      context.font = '40pt';
       context.fillStyle = 'blue';
       context.fillText('Hello World!', 150, 100);
+      //draw one circle and rectangle
       context.beginPath();
       context.moveTo(10,10);
-      context.lineTo(50,50);
+      context.fillStyle="green";
+      context.fillRect(10,10,20,20);
+      context.moveTo(50,50);
+      context.rect(50,50,50,50)
       context.strokeStyle = "red";
+      context.stroke();
+      context.circle(200,200,50);
+      context.strokeStyle = "organce";
       context.stroke();
     </script>
   </body>
