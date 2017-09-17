@@ -12,8 +12,10 @@
     <script>
       var canvasEl = document.getElementById("canvas");
       var context = canvasEl.getContext("2d");
+      context.font = '40pt Calibri';
+      context.fillStyle = 'blue';
+      context.fillText('Hello World!', 150, 100);
       context.beginPath();
-      
       context.moveTo(10,10);
       context.lineTo(50,50);
       context.strokeStyle = "red";
